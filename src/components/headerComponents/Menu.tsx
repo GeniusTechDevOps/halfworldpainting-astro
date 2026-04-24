@@ -75,6 +75,11 @@ export default function Menu({
       statusRoutes: data?.reviews?.stateReviews && data.reviews?.viewAll,
     },
     {
+      name: "Local Profile",
+      path: "/local-profile",
+      icon: "BusinessProfile",
+    },
+    {
       name: "Videos",
       path: "/videos",
       icon: "Videos",
