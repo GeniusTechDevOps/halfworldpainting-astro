@@ -8,6 +8,7 @@ import WidgetButton from "../components/global/ContentWidgets";
 import BotonWhatsapp from "../components/global/botonWhatsapp/BotonWahtsapp";
 import Header from "../components/header/Header.astro";
 import { buildBaseStructuredData, getSiteOrigin } from "../lib/aiDiscovery";
+import Chatbot from "../components/bot/Chatbot";
 
 
 interface Props {
@@ -107,6 +108,7 @@ const allStructuredData = [...baseStructuredData, ...pageStructuredData];
           </div>
           <Footer />
           <WidgetButton client:load />
+          <Chatbot  client:load/>
           <ScrollToTop client:visible />
           <BotonWhatsapp data={data} client:visible />
         </main>

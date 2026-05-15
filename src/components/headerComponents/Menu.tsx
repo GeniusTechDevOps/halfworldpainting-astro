@@ -93,7 +93,7 @@ export default function Menu({
   ];
 
   return (
-    <div className={`flex md:gap-6 gap-[24px] ${styleList}`}>
+    <div className={`flex md:gap-2 gap-[24px] ${styleList}`}>
       {routes.map((item, index) => {
         if (item.statusRoutes === undefined || item.statusRoutes === true) {
           return (
